@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="" method="post" class="invest-form">
+	<div class="container">
+		<h3>Инвестировать сейчас</h3>
+		<div class="form-row">
+			<label for="sumInv">Сумма инвестиции</label>
+			<input type="text" id="sumInv" value="$ 5000" required>
+		</div>
+		<div class="form-row">
+			<label for="mult">Мультипликатор</label>
+			<input type="text" id="mult" disabled value="40" required>
+			<span id="finInv">= $ 200000</span>
+		</div>
+	</div>
+	<div id="drop-button">
+		<div class="arr arr-right"></div>
+		<span>Ограничить прибыль и убыток</span>
+	</div>
+	<div class="container">
+		<div class="hidden-form hide">
+			<div class="form-row">
+				<span>Ограничения в</span>
+				<input type="radio" name="radiobutton" title="%">%
+				<input type="radio" name="radiobutton" title="$">$
+			</div>
+			<div class="form-row">
+				<input type="checkbox" name="limit">Прибыль
+				<input type="number" name="takeProfit">
+			</div>
+			<div class="form-row">
+				<input type="checkbox" name="limit">Убыток
+				<input type="number" name="takeProfit">
+			</div>
+			<div class="row">
+				<button type="submit" class="col-6" name="reduction">В снижение</button>
+				<button type="submit" class="col-6" name="growth">В рост</button>
+			</div>
+		</div>
+	</div>
+</form>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
