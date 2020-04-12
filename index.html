@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="#" method="post" class="invest-form">
+<form action="#" class="invest-form">
 	<div class="container">
 		<span class="head-text">Инвестировать сейчас</span>
 	</div>
@@ -32,7 +32,7 @@
 			<div class="form-row">
 				<span>Ограничения в</span>
 				<input type="radio" name="radiobutton" value="%">%
-				<input type="radio" name="radiobutton" value="$">$
+				<input type="radio" checked name="radiobutton" value="$">$
 			</div>
 			<div class="form-row">
 				<input type="checkbox" class="limit-check" checked name="limit" data-input="takeProfit">Прибыль
@@ -42,10 +42,10 @@
 				<input type="checkbox" class="limit-check" name="limit" data-input="stopLoss">Убыток
 				<input type="number" id="stopLoss" disabled name="stopLoss">
 			</div>
-			<div class="row">
-				<button type="submit" name="reduction">В снижение</button>
-				<button type="submit" name="growth">В рост</button>
-			</div>
+		</div>
+		<div class="row">
+			<button type="submit" class="submit-button" name="direction" value="reduction">В снижение</button>
+			<button type="submit" class="submit-button" name="direction" value="growth">В рост</button>
 		</div>
 	</div>
 </form>

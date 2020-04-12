@@ -11,3 +11,15 @@ $('.limit-check').click((e) => {
     return !old;
   });
 });
+
+$('.invest-form').submit((e) => {
+  e.preventDefault();
+  let data = $('.invest-form').serialize();
+  $.post({
+    url: '',
+    data: data,
+    success: () => {
+      alert('отправка прошла успешно!')
+    },
+  })
+});

@@ -10,6 +10,13 @@
 .invest-form .container {
   padding: 0 23px 0 13px;
 }
+.invest-form input {
+  height: 27px;
+}
+.invest-form .form-row {
+  display: flex;
+  align-items: center;
+}
 .invest-form .head-text {
   font-size: 16px;
   line-height: 32px;
