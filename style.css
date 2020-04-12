@@ -10,12 +10,17 @@
 .invest-form .container {
   padding: 0 23px 0 13px;
 }
-.invest-form input {
+.invest-form #sumInv,
+.invest-form #takeProfit,
+.invest-form #stopLoss {
   height: 27px;
+  border: 1px solid #c0c2c4;
+  width: 128px;
 }
 .invest-form .form-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .invest-form .head-text {
   font-size: 16px;
@@ -31,7 +36,18 @@
 }
 .invest-form #mult {
   width: 51px;
-  height: 27px;
+}
+.invest-form .submit-button {
+  width: 128px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #f26666;
+  color: #ffffff;
+  font-weight: bold;
+  filter: drop-shadow(0px -1px 0px rgba(0, 0, 0, 0.2));
+}
+.invest-form .green {
+  background-color: #53a642;
 }
 .hide {
   display: none;

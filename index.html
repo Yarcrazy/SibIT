@@ -19,8 +19,10 @@
 		</div>
 		<div class="form-row">
 			<label for="mult">Мультипликатор</label>
-			<input type="text" id="mult" name="mult" disabled value="40" required>
-			<span id="finInv">= $ 200000</span>
+			<div>
+				<input type="text" id="mult" name="mult" disabled value="40" required>
+				<span id="finInv">= $ 200000</span>
+			</div>
 		</div>
 	</div>
 	<div id="drop-button">
@@ -31,21 +33,25 @@
 		<div class="hidden-form hide">
 			<div class="form-row">
 				<span>Ограничения в</span>
-				<input type="radio" name="radiobutton" value="%">%
-				<input type="radio" checked name="radiobutton" value="$">$
+				<div>
+					<input type="radio" name="radiobutton" value="%">%
+					<input type="radio" checked name="radiobutton" value="$">$
+				</div>
 			</div>
 			<div class="form-row">
-				<input type="checkbox" class="limit-check" checked name="limit" data-input="takeProfit">Прибыль
+				<div><input type="checkbox" class="limit-check" checked name="limit" data-input="takeProfit">Прибыль
+				</div>
 				<input type="number" id="takeProfit" name="takeProfit">
 			</div>
 			<div class="form-row">
-				<input type="checkbox" class="limit-check" name="limit" data-input="stopLoss">Убыток
+				<div><input type="checkbox" class="limit-check" name="limit" data-input="stopLoss">Убыток
+				</div>
 				<input type="number" id="stopLoss" disabled name="stopLoss">
 			</div>
 		</div>
-		<div class="row">
+		<div class="form-row">
 			<button type="submit" class="submit-button" name="direction" value="reduction">В снижение</button>
-			<button type="submit" class="submit-button" name="direction" value="growth">В рост</button>
+			<button type="submit" class="submit-button green" name="direction" value="growth">В рост</button>
 		</div>
 	</div>
 </form>
