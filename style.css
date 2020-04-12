@@ -1,9 +1,30 @@
 .invest-form {
+  width: 316px;
+  height: 368px;
   margin: 0 auto;
-  font-size: 0.564cm;
-  font-family: "Roboto";
+  font-size: 13px;
+  line-height: 22px;
+  color: #232426;
+  font-family: "Arial";
+}
+.invest-form .container {
+  padding: 0 23px 0 13px;
+}
+.invest-form .head-text {
+  font-size: 16px;
+  line-height: 32px;
   color: #3a3b3c;
-  line-height: 2.002;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.invest-form .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e2e4;
+}
+.invest-form #mult {
+  width: 51px;
+  height: 27px;
 }
 .hide {
   display: none;

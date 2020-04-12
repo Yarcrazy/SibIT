@@ -3,19 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="" method="post" class="invest-form">
+<form action="#" method="post" class="invest-form">
 	<div class="container">
-		<h3>Инвестировать сейчас</h3>
+		<span class="head-text">Инвестировать сейчас</span>
+	</div>
+	<div class="line"></div>
+	<div class="container">
 		<div class="form-row">
 			<label for="sumInv">Сумма инвестиции</label>
-			<input type="text" id="sumInv" value="$ 5000" required>
+			<input type="text" id="sumInv" name="sumInv" value="$ 5000" required>
 		</div>
 		<div class="form-row">
 			<label for="mult">Мультипликатор</label>
-			<input type="text" id="mult" disabled value="40" required>
+			<input type="text" id="mult" name="mult" disabled value="40" required>
 			<span id="finInv">= $ 200000</span>
 		</div>
 	</div>
@@ -27,20 +31,20 @@
 		<div class="hidden-form hide">
 			<div class="form-row">
 				<span>Ограничения в</span>
-				<input type="radio" name="radiobutton" title="%">%
-				<input type="radio" name="radiobutton" title="$">$
+				<input type="radio" name="radiobutton" value="%">%
+				<input type="radio" name="radiobutton" value="$">$
 			</div>
 			<div class="form-row">
-				<input type="checkbox" name="limit">Прибыль
-				<input type="number" name="takeProfit">
+				<input type="checkbox" class="limit-check" checked name="limit" data-input="takeProfit">Прибыль
+				<input type="number" id="takeProfit" name="takeProfit">
 			</div>
 			<div class="form-row">
-				<input type="checkbox" name="limit">Убыток
-				<input type="number" name="takeProfit">
+				<input type="checkbox" class="limit-check" name="limit" data-input="stopLoss">Убыток
+				<input type="number" id="stopLoss" disabled name="stopLoss">
 			</div>
 			<div class="row">
-				<button type="submit" class="col-6" name="reduction">В снижение</button>
-				<button type="submit" class="col-6" name="growth">В рост</button>
+				<button type="submit" name="reduction">В снижение</button>
+				<button type="submit" name="growth">В рост</button>
 			</div>
 		</div>
 	</div>
